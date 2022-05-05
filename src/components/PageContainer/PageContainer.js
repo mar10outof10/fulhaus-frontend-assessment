@@ -1,7 +1,6 @@
 import "./PageContainer.scss";
 import Hero from "./Hero.js";
 import ProductGrid from "./ProductGrid.js";
-import StickyCart from "./StickyCart/StickyCart.js";
 
 const PageContainer = () => {
   return (
