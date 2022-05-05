@@ -1,4 +1,4 @@
-import './Hero.scss';
+import "./Hero.scss";
 
 const Hero = () => {
   return (
@@ -10,6 +10,6 @@ const Hero = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Hero;

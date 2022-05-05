@@ -1,4 +1,4 @@
-import './StickyCartItem.scss';
+import "./StickyCartItem.scss";
 
 const StickyCartItem = () => {
   return (
@@ -14,6 +14,6 @@ const StickyCartItem = () => {
       <button className="stickyCartItem__closeButton"></button>
     </div>
   );
-}
+};
 
 export default StickyCartItem;

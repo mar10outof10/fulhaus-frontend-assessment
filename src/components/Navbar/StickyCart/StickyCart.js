@@ -1,5 +1,5 @@
-import './StickyCart.scss';
-import StickyCartItem from './StickyCartItem.js'
+import "./StickyCart.scss";
+import StickyCartItem from "./StickyCartItem.js";
 
 const StickyCart = () => {
   return (
@@ -14,6 +14,6 @@ const StickyCart = () => {
       </div>
     </div>
   );
-}
+};
 
 export default StickyCart;

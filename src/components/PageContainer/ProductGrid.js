@@ -1,4 +1,4 @@
-import './ProductGrid.scss';
+import "./ProductGrid.scss";
 import ProductGridItem from "./ProductGridItem.js";
 
 const ProductGrid = () => {
@@ -14,6 +14,6 @@ const ProductGrid = () => {
       </div>
     </div>
   );
-}
+};
 
 export default ProductGrid;

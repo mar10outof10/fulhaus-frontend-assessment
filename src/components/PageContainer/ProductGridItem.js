@@ -1,4 +1,4 @@
-import './ProductGridItem.scss';
+import "./ProductGridItem.scss";
 
 const ProductGridItem = () => {
   return (
@@ -17,6 +17,6 @@ const ProductGridItem = () => {
       </div>
     </div>
   );
-}
+};
 
 export default ProductGridItem;

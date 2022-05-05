@@ -1,4 +1,4 @@
-import './Navbar.scss';
+import "./Navbar.scss";
 import StickyCart from "./StickyCart/StickyCart.js";
 
 const Navbar = () => {
@@ -9,6 +9,6 @@ const Navbar = () => {
       <StickyCart />
     </div>
   );
-}
+};
 
 export default Navbar;
