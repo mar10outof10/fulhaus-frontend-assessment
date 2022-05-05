@@ -10,7 +10,6 @@ const PageContainer = () => {
         <Hero />
         <ProductGrid />
       </div>
-      <StickyCart />
     </div>
   );
 }
