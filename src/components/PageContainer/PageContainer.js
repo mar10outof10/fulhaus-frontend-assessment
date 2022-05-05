@@ -1,0 +1,18 @@
+import './PageContainer.scss';
+import Hero from "./Hero.js";
+import ProductGrid from "./ProductGrid.js";
+import StickyCart from "./StickyCart/StickyCart.js";
+
+const PageContainer = () => {
+  return (
+    <div className="pageContainer">
+      <div className="pageContainer__contentContainer">
+        <Hero />
+        <ProductGrid />
+      </div>
+      <StickyCart />
+    </div>
+  );
+}
+
+export default PageContainer;

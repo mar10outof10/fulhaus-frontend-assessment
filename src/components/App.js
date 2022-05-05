@@ -1,9 +1,12 @@
-import './App.css';
+import './App.scss';
+import Navbar from "./Navbar/Navbar.js";
+import PageContainer from "./PageContainer/PageContainer.js";
 
 function App() {
   return (
-    <div className="App">
-
+    <div className="app">
+      <Navbar />
+      <PageContainer />
     </div>
   );
 }
