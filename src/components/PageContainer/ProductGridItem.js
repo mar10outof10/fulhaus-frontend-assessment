@@ -11,15 +11,15 @@ const ProductGridItem = ({product}) => {
 
   return (
     <div className="productGridItem">
-      <img className="productGridItem__image" src={itemPicture} alt="product item picture" />
+      <img className="productGridItem__image" src={product.imageURL} alt="product item" />
       <div className="productGridItem__overlay">
         <div className="productGridItem__overlayUpperSection">
           <div className="productGridItem__productName crimson-xLarge">{product.productName}</div>
-          <div className="productGridItem__brandName crimson-body">{product.brandName}</div>
+          <div className="productGridItem__brandName crimson-body">{product.brandName || 'BRAND NAME'}</div>
         </div>
         <div className="productGridItem__overlayLowerSection">
           <button className="productGridItem__addToCart crimson-medium" onClick={() => dispatch(addProduct(product))}>+ Add to Cart</button>
-          <div className="productGridItem__price crimson-large">${product.price}</div>
+          <div className="productGridItem__price crimson-large">${product.retailPrice}</div>
         </div>
       </div>
     </div>
