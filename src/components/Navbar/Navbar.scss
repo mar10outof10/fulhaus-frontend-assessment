@@ -1,6 +1,7 @@
 @import 'sassStyles/colours';
 
 .navbar {
+  position: sticky;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -4,9 +4,9 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="hero__imageContainer" />
-      <div className="hero__content">
-        <div className="hero__header">Patio Furniture</div>
-        <button className="button hero__button">SHOP</button>
+      <div className="hero__cta">
+        <div className="hero__ctaHeader">Patio Furniture</div>
+        <button className="button hero__ctaButton">SHOP</button>
       </div>
     </div>
   );

@@ -1,14 +1,15 @@
+@import 'sassStyles/colours';
+
 .pageContainer {
   display: flex;
-  justify-content: center;
-  width: 100%;
-  margin: 0 35px;
-
+  background-color: $canvas;
+  
   &__contentContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     max-width: 1440px;
+    margin: 0 35px;
   }
 }
