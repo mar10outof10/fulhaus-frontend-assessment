@@ -5,6 +5,8 @@
   border-radius: 40px;
   overflow: hidden;
   width: 100%;
+  max-width: 380px;
+  justify-self: center;
 
   &__image {
     width: 100%;
