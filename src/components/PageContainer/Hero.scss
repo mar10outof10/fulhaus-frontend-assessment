@@ -30,3 +30,11 @@
     height: 58px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .hero {
+    &__ctaHeader {
+      padding: 0 10px;
+    }
+  }
+}

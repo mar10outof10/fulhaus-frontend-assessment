@@ -14,3 +14,11 @@
     margin: 0 35px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .pageContainer {
+    &__contentContainer {
+      margin: 0;
+    }
+  }
+}

@@ -2,7 +2,7 @@
   position: absolute;
   top: 79px;
   width: 616px;
-  max-width: 616px;
+  max-width: 100vw;
   padding: 0 37px 50px;
   height: calc(100vh - 80px);
   background: white;
@@ -45,5 +45,15 @@
   &__checkout {
     width: 546px;
     height: 91px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .stickyCart {
+    padding: 0 15px 50px;
+
+    &__checkout {
+      max-width: calc(100vw - 30px);
+    }
   }
 }

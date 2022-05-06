@@ -20,3 +20,11 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .productGrid {
+    &__list {
+      grid-template-columns: 1fr;
+    }
+  }
+}

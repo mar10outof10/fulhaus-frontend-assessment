@@ -41,3 +41,14 @@
     margin-bottom: 12px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .stickyCartItem {
+    height: 170px;
+    padding: 10px 0 10px;
+
+    &__textContainer {
+      height: auto;
+    }
+  }
+}
