@@ -9,6 +9,8 @@ const StickyCart = ( {cartActive} ) => {
       <div className="stickyCart__items">
         <StickyCartItem />
         <StickyCartItem />
+        <StickyCartItem />
+        <StickyCartItem />
       </div>
       <div className="stickyCart__checkoutInfo">
         <div className="stickyCart__total montserrat-med">Total:<span className="stickyCart__price">$1800</span></div>
