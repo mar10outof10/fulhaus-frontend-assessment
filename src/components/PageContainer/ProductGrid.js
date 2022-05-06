@@ -19,7 +19,6 @@ const ProductGrid = () => {
       const resProducts = res.data.data.products;
       setProducts(resProducts.map((prod) => {
         return {
-          id: prod._id,
           productName: prod.fulhausProductName,
           retailPrice: prod.retailPrice,
           imageURL: prod.imageURLs[0],

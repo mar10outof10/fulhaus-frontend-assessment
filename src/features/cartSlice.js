@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { v4 as uuid } from 'uuid';
 
 export const cartSlice = createSlice( {
   name: 'cart',
@@ -8,12 +9,15 @@ export const cartSlice = createSlice( {
   },
   reducers: {
     addProduct: (state, action) => {
-      state.products.push(action.payload);
-      console.log(action.payload);
+      const cartItem = {
+        id: uuid(),
+        ...action.payload,
+      }
+      state.products.push(cartItem);
       state.subtotal += (action.payload.retailPrice);
     },
     removeProduct: (state, action) => {
-      state = state.products.filter((product) => {
+      state.products = state.products.filter((product) => {
         return product.id !== action.payload.id;
       })
       state.subtotal -= action.payload.retailPrice;
