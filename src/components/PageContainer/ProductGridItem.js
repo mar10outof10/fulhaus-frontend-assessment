@@ -1,5 +1,5 @@
 import "./ProductGridItem.scss";
-import itemPicture from "../../assets/images/productGrid__itemPicture.png"
+import itemPicture from "assets/images/productGrid__itemPicture.png"
 
 const ProductGridItem = () => {
   return (

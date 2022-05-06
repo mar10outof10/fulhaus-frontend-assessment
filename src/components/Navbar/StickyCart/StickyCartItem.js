@@ -1,6 +1,6 @@
 import "./StickyCartItem.scss";
-import itemPicture from "../../../assets/images/productGrid__itemPicture.png"
-import closeIcon from "../../../assets/images/closeIcon.svg"
+import itemPicture from "assets/images/productGrid__itemPicture.png"
+import closeIcon from "assets/images/closeIcon.svg"
 
 
 const StickyCartItem = () => {
