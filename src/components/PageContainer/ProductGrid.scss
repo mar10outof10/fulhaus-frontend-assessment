@@ -1,0 +1,11 @@
+.productGrid {
+  width: 100%;
+  margin: 96px 0 73px;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 48px;
+    row-gap: 96px;
+    column-gap: 68px;
+  }
+}
