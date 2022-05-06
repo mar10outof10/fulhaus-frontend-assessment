@@ -1,5 +1,5 @@
 import "./App.scss";
-import "../sassStyles/_colours.scss";
+import "../sassStyles/style.scss";
 import Navbar from "./Navbar/Navbar.js";
 import PageContainer from "./PageContainer/PageContainer.js";
 

@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar__container">
         <div className="navbar__header">Fülhaus Shop</div>
-        <button className="navbar__cartButton">CART</button>
+        <button className="button navbar__cartButton">CART</button>
       </div>
       <StickyCart />
     </div>
