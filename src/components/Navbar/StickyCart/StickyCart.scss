@@ -58,7 +58,13 @@
 
 @media screen and (max-width: 600px) {
   .stickyCart {
-    padding: 0 15px 50px;
+    &__active {
+      padding: 0 15px 50px;
+    }
+
+    &__inactive {
+      padding: 0 0 50px;
+    }
 
     &__checkout {
       max-width: calc(100vw - 30px);
