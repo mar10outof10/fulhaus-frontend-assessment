@@ -1,3 +1,43 @@
 .stickyCart {
-  display: none;
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  width: 616px;
+  max-width: 616px;
+  height: calc(100vh - 80px);
+  padding: 0 37px 50px;
+  background: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__items {
+    width: 100%;
+  }
+
+  &__checkoutInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+  }
+
+  &__total {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__price {
+    align-self: flex-end;
+  }
+  
+  &__checkout {
+    width: 546px;
+    height: 91px;
+  }
 }
