@@ -1,0 +1,49 @@
+.productGridItem {
+  position: relative;
+  border-radius: 40px;
+
+  &__image {
+    position: absolute;
+    width: 100%;
+  }
+
+  &__overlay {
+    display: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+  }
+
+  &__overlayUpperSection {
+    
+  }
+
+  &__productName {
+
+  }
+
+  &__brandName {
+
+  }
+
+  &__overlayLowerSection {
+
+  }
+
+  &__addToCart {
+
+  }
+
+  &__price {
+
+  }
+
+
+
+  &:active, &:hover {
+    .productGridItem__overlay {
+      display: block;
+    }
+  }
+}

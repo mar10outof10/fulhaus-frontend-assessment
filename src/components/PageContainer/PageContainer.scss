@@ -3,6 +3,7 @@
 .pageContainer {
   display: flex;
   background-color: $canvas;
+  justify-content: center;
   
   &__contentContainer {
     display: flex;
