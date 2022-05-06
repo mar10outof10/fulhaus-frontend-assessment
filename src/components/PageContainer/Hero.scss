@@ -1,6 +1,7 @@
 
 
 .hero {
+  height: calc(100vh - 80px);
   &__imageContainer {
     background: url('../../assets/images/hero__backgroundImage.png')
   }
