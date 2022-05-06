@@ -1,16 +1,25 @@
 .stickyCart {
   position: absolute;
-  top: 80px;
-  right: 0px;
+  top: 79px;
   width: 616px;
   max-width: 616px;
-  height: calc(100vh - 80px);
   padding: 0 37px 50px;
+  height: calc(100vh - 80px);
   background: white;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  transition: all ease 1.6s;
+
+  &__active {
+    right: 0;
+  }
+
+  &__inactive {
+    right: -616px;
+  }
 
   &__items {
     width: 100%;

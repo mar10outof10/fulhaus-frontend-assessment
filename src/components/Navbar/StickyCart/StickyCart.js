@@ -1,9 +1,11 @@
 import "./StickyCart.scss";
 import StickyCartItem from "./StickyCartItem.js";
 
-const StickyCart = () => {
+const StickyCart = ( {cartActive} ) => {
+  let cartClassName = `stickyCart${cartActive ? ' stickyCart__active' : ' stickyCart__inactive'}`
+
   return (
-    <div className="stickyCart">
+    <div className={cartClassName}>
       <div className="stickyCart__items">
         <StickyCartItem />
         <StickyCartItem />
