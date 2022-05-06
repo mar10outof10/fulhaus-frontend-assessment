@@ -2,10 +2,11 @@ import "./ProductGridItem.scss";
 import itemPicture from "assets/images/productGrid__itemPicture.png"
 
 import { useDispatch, useSelector } from 'react-redux'
-import { addProduct } from 'features/productsSlice'
+import { addProduct } from 'features/cartSlice'
 
-const ProductGridItem = () => {
-  console.log(useSelector((state) => state.products))
+const ProductGridItem = ({product}) => {
+  const subtotal = (useSelector((state) => state.cart.subtotal))
+  console.log(typeof(subtotal));
   const dispatch = useDispatch();
 
   return (
@@ -13,12 +14,12 @@ const ProductGridItem = () => {
       <img className="productGridItem__image" src={itemPicture} alt="product item picture" />
       <div className="productGridItem__overlay">
         <div className="productGridItem__overlayUpperSection">
-          <div className="productGridItem__productName crimson-xLarge">Product Name</div>
-          <div className="productGridItem__brandName crimson-body">BRAND NAME</div>
+          <div className="productGridItem__productName crimson-xLarge">{product.productName}</div>
+          <div className="productGridItem__brandName crimson-body">{product.brandName}</div>
         </div>
         <div className="productGridItem__overlayLowerSection">
-          <button className="productGridItem__addToCart crimson-medium" onClick={() => dispatch(addProduct({"ye": "ye"}))}>+ Add to Cart</button>
-          <div className="productGridItem__price crimson-large">$900</div>
+          <button className="productGridItem__addToCart crimson-medium" onClick={() => dispatch(addProduct(product))}>+ Add to Cart</button>
+          <div className="productGridItem__price crimson-large">${product.price}</div>
         </div>
       </div>
     </div>
