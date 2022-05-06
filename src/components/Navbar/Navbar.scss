@@ -1,13 +1,33 @@
 @import 'sassStyles/colours';
 
 .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 80px;
   background-color: $white;
+  border: solid 1px $black;
+  border-left: none;
+  border-right: none;
 
   &__container {
+    width: 100%;
     max-width: 1440px;
+    margin: 0 40px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 44px;
+  }
+
+  &__cartButton {
+    width: 150px;
+    height: 58px;
   }
 }

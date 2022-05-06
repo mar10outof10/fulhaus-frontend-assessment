@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar__container">
-        <div className="navbar__header">Fülhaus Shop</div>
+        <div className="navbar__title">Fülhaus Shop</div>
         <button className="button navbar__cartButton">CART</button>
       </div>
       <StickyCart />
