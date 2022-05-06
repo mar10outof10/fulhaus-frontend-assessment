@@ -11,7 +11,7 @@ const StickyCart = ( {cartActive} ) => {
         <StickyCartItem />
       </div>
       <div className="stickyCart__checkoutInfo">
-        <div className="stickyCart__total">Total:<span className="stickyCart__price">$1800</span></div>
+        <div className="stickyCart__total montserrat-med">Total:<span className="stickyCart__price">$1800</span></div>
         <button className="button stickyCart__checkout">CHECKOUT</button>
       </div>
     </div>

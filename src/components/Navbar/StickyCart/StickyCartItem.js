@@ -11,8 +11,8 @@ const StickyCartItem = () => {
       </div>
       <div className="stickyCartItem__textContainer">
         <div className="stickyCartItem__productName">Product Name</div>
-        <div className="stickyCartItem__brandName">BRAND NAME</div>
-        <div className="stickyCartItem__price">$900</div>
+        <div className="stickyCartItem__brandName crimson-small">BRAND NAME</div>
+        <div className="stickyCartItem__price crimson-small">$900</div>
       </div>
       <button className="stickyCartItem__closeButton">
         <img className="stickyCartItem__closeButtonIcon" src={closeIcon} alt="X"/>
