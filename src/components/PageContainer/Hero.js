@@ -3,10 +3,10 @@ import "./Hero.scss";
 const Hero = () => {
   return (
     <div className="hero">
-      <image className="hero__image" />
+      <div className="hero__imageContainer" />
       <div className="hero__content">
-        <div className="hero__header"></div>
-        <button className="hero__button"></button>
+        <div className="hero__header">Patio Furniture</div>
+        <button className="hero__button">SHOP</button>
       </div>
     </div>
   );

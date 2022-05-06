@@ -9,8 +9,8 @@ const StickyCart = () => {
         <StickyCartItem />
       </div>
       <div className="stickyCart__contentBox">
-        <div className="stickyCart__total"></div>
-        <button className="stickyCart__button"></button>
+        <div className="stickyCart__total">Total:<span className="stickyCart__price">$1800</span></div>
+        <button className="stickyCart__button">CHECKOUT</button>
       </div>
     </div>
   );
