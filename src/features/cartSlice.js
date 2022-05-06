@@ -13,8 +13,8 @@ export const cartSlice = createSlice( {
       state.subtotal += (action.payload.retailPrice);
     },
     removeProduct: (state, action) => {
-      state = state.filter((state) => {
-        return state.id !== action.payload;
+      state = state.products.filter((product) => {
+        return product.id !== action.payload.id;
       })
       state.subtotal -= action.payload.retailPrice;
     }

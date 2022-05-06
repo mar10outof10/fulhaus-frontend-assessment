@@ -1,12 +1,10 @@
 import "./ProductGridItem.scss";
 import itemPicture from "assets/images/productGrid__itemPicture.png"
 
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { addProduct } from 'features/cartSlice'
 
-const ProductGridItem = ({product}) => {
-  const subtotal = (useSelector((state) => state.cart.subtotal))
-  
+const ProductGridItem = ({product}) => {  
   const dispatch = useDispatch();
 
   return (
