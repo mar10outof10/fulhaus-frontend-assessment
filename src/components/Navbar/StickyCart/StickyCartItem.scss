@@ -1,0 +1,47 @@
+.stickyCartItem {
+  display: flex;
+  justify-content: space-between;
+  height: 250px;
+  width: 100%;
+  padding: 30px 0 25px;
+  border-bottom: solid 1px black;
+
+  &__imageContainer {
+    height: 100%;
+  }
+
+  &__image {
+    height: 100%;
+    width: auto;
+  }
+
+  &__textContainer {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 190px;
+    padding-left: 20px;
+  }
+
+  &__closeButton {
+    align-self: flex-start;
+  }
+
+  &__productName {
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  &__brandName {
+    font-size: 18px;
+    line-height: 23.4px;
+  }
+  
+  &__price {
+    font-size: 18px;
+    line-height: 23.4px;
+    margin-top: auto;
+    margin-bottom: 12px;
+  }
+}
