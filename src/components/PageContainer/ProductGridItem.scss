@@ -20,9 +20,11 @@
     position: absolute;
     left: 0;
     top: 0;
-    color: $white;
     background-color: $blackTransparent;
     padding: 42px;
+    & * {
+      color: $white;
+    }
   }
 
   &__overlayUpperSection {
