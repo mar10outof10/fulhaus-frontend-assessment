@@ -2,10 +2,12 @@ import { createSlice } from '@reduxjs/toolkit';
 
 export const productsSlice = createSlice( {
   name: 'products',
-  initialState: [],
+  initialState: {
+    "products": [],
+  },
   reducers: {
     addProduct: (state, action) => {
-      state.push(action.payload);
+      state.products.push(action.payload);
     },
     removeProduct: (state, action) => {
       state = state.filter((state) => {
