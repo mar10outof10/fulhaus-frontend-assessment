@@ -1,5 +1,4 @@
 import "./ProductGridItem.scss";
-import itemPicture from "assets/images/productGrid__itemPicture.png"
 
 import { useDispatch } from 'react-redux'
 import { addProduct } from 'features/cartSlice'

@@ -8,9 +8,6 @@ const StickyCart = ( {cartActive} ) => {
   const cart = (useSelector((state) => state.cart))
   const subtotal = cart.subtotal;
 
-
-  console.log(cart, 'a');
-
   const CartItems = () => (
     cart.products.map((cartItem) => (
       <StickyCartItem cartItem={cartItem} />

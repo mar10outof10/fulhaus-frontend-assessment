@@ -4,12 +4,6 @@ import axios from 'axios';
 import React from "react";
 
 const ProductGrid = () => {
-  const product = {
-    "productName": "Product Name",
-    "brandName": "BRAND NAME",
-    "price": 900,
-  }
-
   const [products, setProducts] = React.useState([]);
 
   // returns array of 6 products
@@ -33,8 +27,6 @@ const ProductGrid = () => {
         product={product}
       />
   ))
-
-  console.log(products);
 
   return (
     <div className="productGrid">
