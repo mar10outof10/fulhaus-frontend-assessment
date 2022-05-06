@@ -6,7 +6,7 @@ import { addProduct } from 'features/cartSlice'
 
 const ProductGridItem = ({product}) => {
   const subtotal = (useSelector((state) => state.cart.subtotal))
-  console.log(typeof(subtotal));
+  
   const dispatch = useDispatch();
 
   return (

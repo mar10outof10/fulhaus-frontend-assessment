@@ -1,20 +1,24 @@
 import "./StickyCartItem.scss";
 import itemPicture from "assets/images/productGrid__itemPicture.png"
 import closeIcon from "assets/images/closeIcon.svg"
+import { useDispatch } from 'react-redux'
+import { removeProduct } from 'features/cartSlice'
 
 
-const StickyCartItem = () => {
+const StickyCartItem = ({cartItem}) => {
+  const dispatch = useDispatch();
+
   return (
     <div className="stickyCartItem">
       <div className="stickyCartItem__imageContainer">
-        <img className="stickyCartItem__image" src={itemPicture} alt="product item picture" />
+        <img className="stickyCartItem__image" src={cartItem.imageURL} alt="product item picture" />
       </div>
       <div className="stickyCartItem__textContainer">
-        <div className="stickyCartItem__productName">Product Name</div>
+        <div className="stickyCartItem__productName">{cartItem.productName}</div>
         <div className="stickyCartItem__brandName crimson-small">BRAND NAME</div>
-        <div className="stickyCartItem__price crimson-small">$900</div>
+        <div className="stickyCartItem__price crimson-small">${cartItem.retailPrice}</div>
       </div>
-      <button className="stickyCartItem__closeButton">
+      <button className="stickyCartItem__closeButton" onClick={() => dispatch(removeProduct(cartItem))}>
         <img className="stickyCartItem__closeButtonIcon" src={closeIcon} alt="X"/>
       </button>
     </div>

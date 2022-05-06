@@ -10,13 +10,13 @@ export const cartSlice = createSlice( {
     addProduct: (state, action) => {
       state.products.push(action.payload);
       console.log(action.payload);
-      state.subtotal += (action.payload.price);
+      state.subtotal += (action.payload.retailPrice);
     },
     removeProduct: (state, action) => {
       state = state.filter((state) => {
         return state.id !== action.payload;
       })
-      state.subtotal -= action.payload.price;
+      state.subtotal -= action.payload.retailPrice;
     }
   }
 })
