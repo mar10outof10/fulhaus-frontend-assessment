@@ -12,8 +12,13 @@ const ProductGrid = () => {
     .then(res => {
       const resProducts = res.data.data.products;
       setProducts(resProducts.map((prod) => {
+        const [brandName, ...productName] = prod.fulhausProductName.split(' ');
+
+        
         return {
-          productName: prod.fulhausProductName,
+          productID: prod._id,
+          productName: productName.join(' '),
+          brandName: brandName,
           retailPrice: prod.retailPrice,
           imageURL: prod.imageURLs[0],
         }
@@ -23,7 +28,7 @@ const ProductGrid = () => {
 
   const productGridList = products.map((product) => (
       <ProductGridItem
-        key={product.id}
+        key={product.productID}
         product={product}
       />
   ))

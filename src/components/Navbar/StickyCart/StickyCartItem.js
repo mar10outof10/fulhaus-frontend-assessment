@@ -10,11 +10,11 @@ const StickyCartItem = ({cartItem}) => {
   return (
     <div className="stickyCartItem">
       <div className="stickyCartItem__imageContainer">
-        <img className="stickyCartItem__image" src={cartItem.imageURL} alt="product item picture" />
+        <img className="stickyCartItem__image" src={cartItem.imageURL} alt="product item" />
       </div>
       <div className="stickyCartItem__textContainer">
         <div className="stickyCartItem__productName">{cartItem.productName}</div>
-        <div className="stickyCartItem__brandName crimson-small">BRAND NAME</div>
+        <div className="stickyCartItem__brandName crimson-small">{cartItem.brandName}</div>
         <div className="stickyCartItem__price crimson-small">${cartItem.retailPrice}</div>
       </div>
       <button className="stickyCartItem__closeButton" onClick={() => dispatch(removeProduct(cartItem))}>

@@ -23,7 +23,7 @@
     left: 0;
     top: 0;
     background-color: $blackTransparent;
-    padding: 42px;
+    padding: 22px 32px;
     & * {
       color: $white;
     }
@@ -45,6 +45,7 @@
   &__overlayLowerSection {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
   }
 
   &__addToCart {

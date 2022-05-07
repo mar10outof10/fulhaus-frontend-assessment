@@ -10,7 +10,7 @@ const StickyCart = ( {cartActive} ) => {
 
   const CartItems = () => (
     cart.products.map((cartItem) => (
-      <StickyCartItem cartItem={cartItem} />
+      <StickyCartItem key={cartItem.id} cartItem={cartItem} />
     ))
   )
 
