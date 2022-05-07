@@ -1,10 +1,10 @@
-@import 'sassStyles/colours';
+@import "sassStyles/colours";
 
 .pageContainer {
   display: flex;
   background-color: $canvas;
   justify-content: center;
-  
+
   &__contentContainer {
     display: flex;
     flex-direction: column;

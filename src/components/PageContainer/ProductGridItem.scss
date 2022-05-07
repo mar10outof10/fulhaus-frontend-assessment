@@ -1,4 +1,4 @@
-@import 'sassStyles/colours';
+@import "sassStyles/colours";
 
 .productGridItem {
   position: relative;
@@ -44,7 +44,8 @@
     cursor: pointer;
   }
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     .productGridItem__overlay {
       display: flex;
     }

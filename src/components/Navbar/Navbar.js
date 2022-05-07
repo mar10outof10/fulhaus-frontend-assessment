@@ -7,13 +7,18 @@ const Navbar = () => {
 
   const toggleCartActive = () => {
     setCartActive(!cartActive);
-  }
+  };
 
   return (
     <div className="navbar">
       <div className="navbar__container">
         <div className="navbar__title montserrat-logo">Fülhaus Shop</div>
-        <button className="button navbar__cartButton" onClick={toggleCartActive}>CART</button>
+        <button
+          className="button navbar__cartButton"
+          onClick={toggleCartActive}
+        >
+          CART
+        </button>
       </div>
       <StickyCart cartActive={cartActive} />
     </div>

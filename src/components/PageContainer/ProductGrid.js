@@ -1,6 +1,6 @@
 import "./ProductGrid.scss";
 import ProductGridItem from "./ProductGridItem.js";
-import axios from 'axios';
+import axios from "axios";
 import React from "react";
 
 const ProductGrid = () => {
@@ -8,36 +8,37 @@ const ProductGrid = () => {
 
   // returns array of 6 products
   React.useEffect(() => {
-    axios.get('https://fh-api-dev.herokuapp.com/api/products-service/products/website/CAD?page=0&limit=6')
-    .then(res => {
-      const resProducts = res.data.data.products;
-      setProducts(resProducts.map((prod) => {
-        const [brandName, ...productName] = prod.fulhausProductName.split(' ');
+    axios
+      .get(
+        "https://fh-api-dev.herokuapp.com/api/products-service/products/website/CAD?page=0&limit=6"
+      )
+      .then((res) => {
+        const resProducts = res.data.data.products;
+        setProducts(
+          resProducts.map((prod) => {
+            const [brandName, ...productName] =
+              prod.fulhausProductName.split(" ");
 
-        
-        return {
-          productID: prod._id,
-          productName: productName.join(' '),
-          brandName: brandName,
-          retailPrice: prod.retailPrice,
-          imageURL: prod.imageURLs[0],
-        }
-      }))
-    }).catch(err => console.log(err));
-  }, [])
+            return {
+              productID: prod._id,
+              productName: productName.join(" "),
+              brandName: brandName,
+              retailPrice: prod.retailPrice,
+              imageURL: prod.imageURLs[0],
+            };
+          })
+        );
+      })
+      .catch((err) => console.log(err));
+  }, []);
 
   const productGridList = products.map((product) => (
-      <ProductGridItem
-        key={product.productID}
-        product={product}
-      />
-  ))
+    <ProductGridItem key={product.productID} product={product} />
+  ));
 
   return (
     <div className="productGrid">
-      <ul className="productGrid__list">
-        {productGridList}
-      </ul>
+      <ul className="productGrid__list">{productGridList}</ul>
     </div>
   );
 };
