@@ -12,7 +12,7 @@ const ProductGridItem = ({product}) => {
       <div className="productGridItem__overlay">
         <div className="productGridItem__overlayUpperSection">
           <div className="productGridItem__productName crimson-xLarge">{product.productName}</div>
-          <div className="productGridItem__brandName crimson-body">{product.brandName || 'BRAND NAME'}</div>
+          <div className="productGridItem__brandName crimson-large">{product.brandName}</div>
         </div>
         <div className="productGridItem__overlayLowerSection">
           <button className="productGridItem__addToCart crimson-medium" onClick={() => dispatch(addProduct(product))}>+ Add to Cart</button>

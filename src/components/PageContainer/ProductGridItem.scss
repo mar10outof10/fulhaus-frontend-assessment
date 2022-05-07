@@ -23,7 +23,7 @@
     left: 0;
     top: 0;
     background-color: $blackTransparent;
-    padding: 22px 32px;
+    padding: 32px 48px 32px 38px;
     & * {
       color: $white;
     }
@@ -32,14 +32,6 @@
   &__overlayUpperSection {
     display: flex;
     flex-direction: column;
-  }
-
-  &__productName {
-
-  }
-
-  &__brandName {
-
   }
 
   &__overlayLowerSection {
@@ -51,12 +43,6 @@
   &__addToCart {
     cursor: pointer;
   }
-
-  &__price {
-
-  }
-
-
 
   &:focus, &:hover {
     .productGridItem__overlay {

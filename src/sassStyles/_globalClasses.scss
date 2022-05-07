@@ -10,8 +10,7 @@
   color: $white;
   cursor: pointer;
 
-  &:active {
-    border: solid 2px $black;
-    background-color: $grey;
+  &:hover {
+    opacity: 0.5;
   }
 }
